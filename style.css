@@ -8,6 +8,7 @@ body {
     min-height: 100vh;
     margin: 0;
 }
+/* figure out how to change background image depending on the page! also, this is annoying and hard lol*/
 .title {
     text-align: center;
     display: flex;
@@ -22,12 +23,12 @@ body {
     border-radius: 20px;
     font-family: cursive;
     font-style: oblique;
-    font-size: 50px;
-    font-weight: 800;
+    font-size: 70px;
+    font-weight: 900;
 }
 .title img {
-    height: 170px;
-    width: 170px;
+    height: 180px;
+    width: 180px;
     object-fit: contain;
 }
 .recipe-list {
@@ -90,4 +91,74 @@ body {
     margin-top: 5px;
     transition: opacity 0.3s ease;
 }
-/* add pictures and figure out how to order them correctly and chage borders, effects, etc. */
+.desc-box {
+    background-color: rgba(255, 255, 255, .85);
+    padding: 25px;
+    border: 4px double black;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+.desc-box h3 {
+    font-size: 30px;
+    font-family: cursive;
+    font-style: oblique;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.desc-box p {
+    font-size: 20px;
+}
+.ingredients,
+.quick-facts li {
+    font-size: 20px;
+}
+.recipe-info {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+.quick-facts, 
+.ingredients {
+    background-color: rgba(173, 145, 66, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+}
+.steps {
+    background-color: rgba(255, 255, 255, .85);
+    padding: 25px;
+    border: 4px double black;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+.bottom-place {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    border: 3px solid green;
+}
+.home-button {
+    margin: 20px;
+}
+.home-button img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+.home-button a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 5px;
+    background-color: rgba(173, 145, 66, 0);
+    border: 3px solid black;
+    border-radius: 30px;
+    font-family: cursive;
+    font-size: 40px;
+    font-style: oblique;
+    text-decoration: none;
+    color: black;
+}
