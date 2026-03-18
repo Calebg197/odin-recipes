@@ -8,7 +8,6 @@ body {
     min-height: 100vh;
     margin: 0;
 }
-/* figure out how to change background image depending on the page! also, this is annoying and hard lol*/
 .title {
     text-align: center;
     display: flex;
@@ -18,7 +17,7 @@ body {
     border: 5px solid black;
     border-style: double;
     padding: 10px 41px;
-    margin: 10px auto 300px;
+    margin: 10px auto 200px;
     width: fit-content;
     border-radius: 20px;
     font-family: cursive;
@@ -30,6 +29,23 @@ body {
     height: 180px;
     width: 180px;
     object-fit: contain;
+}
+.title-other {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 5px solid black;
+    border-style: double;
+    padding: 10px 41px;
+    margin: 10px auto 50px;
+    width: fit-content;
+    border-radius: 20px;
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 70px;
+    font-weight: 900;
 }
 .recipe-list {
     list-style: none;
@@ -96,11 +112,11 @@ body {
     padding: 25px;
     border: 4px double black;
     border-radius: 15px;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 30px auto;
 }
 .desc-box h3 {
-    font-size: 30px;
+    font-size: 35px;
     font-family: cursive;
     font-style: oblique;
     text-decoration: none;
@@ -108,11 +124,16 @@ body {
     font-weight: bold;
 }
 .desc-box p {
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 500;
 }
-.ingredients,
 .quick-facts li {
     font-size: 20px;
+    margin-bottom: 10px;
+}
+.ingredients li {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 .recipe-info {
     display: flex;
@@ -125,26 +146,71 @@ body {
     padding: 15px;
     border-radius: 10px;
     flex: 1;
+    border: 2px solid black;
+}
+.recipe-pic img {
+    display: block;
+    margin: 50px auto;
+    width: 300px;
+    border-radius: 50px;
+}
+.pg-logo-1 img {
+    display: block;
+    margin: 50px auto;
+    width: 500px;
+    transform: .5s ease;
+}
+.pg-logo-1 img:hover {
+    transform: scale(1.2);
+    animation: shake .5s;
+}
+@keyframes shake {
+     0%   { transform: translateX(0) scale(1.2); }
+    25%  { transform: translateX(-3px) scale(1.2); }
+    50%  { transform: translateX(3px) scale(1.2); }
+    75%  { transform: translateX(-3px) scale(1.2); }
+    100% { transform: translateX(0) scale(1.2); }
 }
 .steps {
-    background-color: rgba(255, 255, 255, .85);
-    padding: 25px;
+    background-color: rgba(255, 255, 255, .8);
+    padding: 35px;
     border: 4px double black;
     border-radius: 15px;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 30px auto;
+}
+.steps li {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 550;
+}
+.steps h3 {
+   font-size: 35px;
+    font-family: cursive;
+    font-style: oblique;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.pg-logo-2 img {
+    display: block;
+    margin: 50px auto;
+    width: 500px;
 }
 .bottom-place {
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    border: 3px solid green;
 }
 .home-button {
     margin: 20px;
+    transition: .5s ease;
+}
+.home-button:hover {
+    scale: 1.2;
 }
 .home-button img {
-    width: 100px;
+    width: 125px;
     height: auto;
     cursor: pointer;
 }
