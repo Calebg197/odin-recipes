@@ -16,13 +16,13 @@ body {
     background-color: transparent;
     border: 5px solid black;
     border-style: double;
-    padding: 10px 41px;
+    padding: 5px 100px;
     margin: 10px auto 200px;
     width: fit-content;
     border-radius: 20px;
     font-family: cursive;
     font-style: oblique;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 900;
 }
 .title img {
@@ -38,13 +38,13 @@ body {
     background-color: transparent;
     border: 5px solid black;
     border-style: double;
-    padding: 10px 41px;
+    padding: 5px 100px;
     margin: 10px auto 50px;
     width: fit-content;
     border-radius: 20px;
     font-family: cursive;
     font-style: oblique;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 900;
 }
 .recipe-list {
@@ -109,14 +109,14 @@ body {
 }
 .desc-box {
     background-color: rgba(255, 255, 255, .85);
-    padding: 25px;
+    padding: 10px 15px;
     border: 4px double black;
     border-radius: 15px;
     max-width: 1200px;
     margin: 30px auto;
 }
 .desc-box h3 {
-    font-size: 35px;
+    font-size: 30px;
     font-family: cursive;
     font-style: oblique;
     text-decoration: none;
@@ -124,7 +124,7 @@ body {
     font-weight: bold;
 }
 .desc-box p {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
 }
 .quick-facts li {
@@ -132,8 +132,9 @@ body {
     margin-bottom: 10px;
 }
 .ingredients li {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 10px;
+    font-weight: 900;
 }
 .recipe-info {
     display: flex;
@@ -151,7 +152,7 @@ body {
 .recipe-pic img {
     display: block;
     margin: 50px auto;
-    width: 300px;
+    width: 200px;
     border-radius: 50px;
 }
 .pg-logo-1 img {
@@ -173,19 +174,19 @@ body {
 }
 .steps {
     background-color: rgba(255, 255, 255, .8);
-    padding: 35px;
+    padding: 10px 15px;
     border: 4px double black;
     border-radius: 15px;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 30px auto;
 }
 .steps li {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 15px;
     font-weight: 550;
 }
 .steps h3 {
-   font-size: 35px;
+   font-size: 30px;
     font-family: cursive;
     font-style: oblique;
     text-decoration: none;
